@@ -51,6 +51,7 @@ function forbid_hiding_post_insert_post( $post_id, $post ) {
 		'auto-draft',	// 自動下書
 		'inherit',		// 継承
 		'trash',		// ゴミ箱
+		'customize_changeset', // ライブプレビュー
 	);
 
 	if(in_array($post->post_status,$stop_status))
